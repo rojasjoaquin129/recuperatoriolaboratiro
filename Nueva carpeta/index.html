@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./js/funciones.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div class="loader" id="loader" hidden></div>
+    <div class="contenedor" id="div" hidden>
+        <input type="button" value="X" id="btnCerrar"  class="cerrar"/>
+        <h2>Modificar Persona</h2>
+        <label for="name">Nombre</label><br>
+        <input type="text" name=""  placeholder="Ingrese Nombre" id="nombre" class="inputSinError"><br>
+        <label for="lname">Apellido</label><br>
+        <input type="text" name=""  placeholder="Ingrese Apellido" id="apellido" class="inputSinError"><br>
+        <label for="lname">Localidad</label><br>
+        <select name="lista" size="1" id="select" >
+            </select><br>
+        <label for="sexo">Sexo</label><br> 
+        <input type="radio" name="sexo" value="femenino" id ="f">
+        <label for="Femenino">Femenino</label><br>
+        <input type="radio" name="sexo" value="Masculino" id="m">
+        <label for="Masculino">Masculino</label><br>
+        <input type="button" value="Modificar" id="btnGuardar" class="boton"/><br>      
+    </div>
+
+    <h2>Lista de Persona</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Localidad</th>
+                <th>Sexo</th>
+            </tr>
+        </thead>
+        <tbody id="body">
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
